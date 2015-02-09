@@ -11,15 +11,130 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 主要依赖库的版本定义 -->
+        <springside.version>4.0.1.GA</springside.version>
+        <spring.version>3.2.0.RELEASE</spring.version>
+        <hibernate.version>4.1.9.Final</hibernate.version>
+        <sitemesh.version>2.4.2</sitemesh.version>
+        <shiro.version>1.2.1</shiro.version>
+        <cxf.version>2.7.1</cxf.version>
+        <activemq.version>5.7.0</activemq.version>
+        <quartz.version>1.8.6</quartz.version>
+        <ehcache.version>2.6.2</ehcache.version>
+        <spymemcached.version>2.8.9</spymemcached.version>
+        <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+        <jolokia.version>1.0.6</jolokia.version>
+        <jackson.version>2.1.2</jackson.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <commons-lang3.version>3.1</commons-lang3.version>
+        <commons-io.version>2.4</commons-io.version>
+        <guava.version>13.0.1</guava.version>
+        <joda-time.version>2.1</joda-time.version>
+        <dozer.version>5.3.2</dozer.version>
+        <httpclient.version>4.2.2</httpclient.version>
+        <freemarker.version>2.3.19</freemarker.version>
+        <junit.version>4.11</junit.version>
+        <mockito.version>1.9.5</mockito.version>
+        <powermock.version>1.5</powermock.version>
+        <selenium.version>2.28.0</selenium.version>
+        <jetty.version>7.6.8.v20121106</jetty.version>
+        <h2.version>1.3.170</h2.version>
 
+        <!-- Plugin的属性定义 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.7</jdk.version>
+    </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-beans</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-core</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.5</version>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>jsp-api</artifactId>
+    	<version>2.0</version>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>1.2</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.jaxrs</groupId>
+    	<artifactId>jackson-jaxrs-json-provider</artifactId>
+    	<version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.quartz-scheduler</groupId>
+    	<artifactId>quartz</artifactId>
+    	<version>${quartz.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>net.sf.ehcache</groupId>
+    	<artifactId>ehcache-core</artifactId>
+    	<version>${ehcache.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>dom4j</groupId>
+    	<artifactId>dom4j</artifactId>
+    	<version>1.6.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context-support</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.aspectj</groupId>
+    	<artifactId>aspectjrt</artifactId>
+    	<version>1.7.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.aspectj</groupId>
+    	<artifactId>aspectjweaver</artifactId>
+    	<version>1.7.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>cglib</groupId>
+    	<artifactId>cglib</artifactId>
+    	<version>2.2.2</version>
+    	<scope>runtime</scope>
     </dependency>
   </dependencies>
 </project>
