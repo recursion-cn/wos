@@ -43,13 +43,13 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
 	<!-- XML视图解析器 -->
-	<bean id="xmlFileViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
-		<property name="location">
-			<value>classpath:spring/views.xml</value>
-		</property>
-		<property name="order">
-			<value>1</value>
-		</property>
-	</bean>
+<!-- 	<bean id="xmlFileViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver"> -->
+<!-- 		<property name="location"> -->
+<!-- 			<value>classpath:spring/views.xml</value> -->
+<!-- 		</property> -->
+<!-- 		<property name="order"> -->
+<!-- 			<value>1</value> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
 
 </beans>
