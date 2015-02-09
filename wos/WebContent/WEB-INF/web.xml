@@ -89,4 +89,7 @@
         <error-code>403</error-code>
         <location>/pages/common/403.jsp</location>
     </error-page>
+     <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>

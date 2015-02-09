@@ -54,37 +54,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-beans</artifactId>
-    	<version>${spring.version}</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-core</artifactId>
-    	<version>${spring.version}</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context</artifactId>
-    	<version>${spring.version}</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-web</artifactId>
-    	<version>${spring.version}</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
-    	<version>${spring.version}</version>
-    </dependency>
-    <dependency>
-    	<groupId>javax.servlet</groupId>
-    	<artifactId>servlet-api</artifactId>
-    	<version>2.5</version>
-    	<scope>provided</scope>
-    </dependency>
-    <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>jsp-api</artifactId>
     	<version>2.0</version>
@@ -106,19 +75,9 @@
     	<version>${quartz.version}</version>
     </dependency>
     <dependency>
-    	<groupId>net.sf.ehcache</groupId>
-    	<artifactId>ehcache-core</artifactId>
-    	<version>${ehcache.version}</version>
-    </dependency>
-    <dependency>
     	<groupId>dom4j</groupId>
     	<artifactId>dom4j</artifactId>
     	<version>1.6.1</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context-support</artifactId>
-    	<version>${spring.version}</version>
     </dependency>
     <dependency>
     	<groupId>org.aspectj</groupId>
@@ -135,6 +94,11 @@
     	<artifactId>cglib</artifactId>
     	<version>2.2.2</version>
     	<scope>runtime</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${spring.version}</version>
     </dependency>
   </dependencies>
 </project>
