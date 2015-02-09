@@ -42,6 +42,10 @@
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
+		
+		<mvc:resources mapping="/static/img/**" location="/static/img/" />
+		<mvc:resources mapping="/static/css/**" location="/static/img/" />
+		<mvc:resources mapping="/static/js/**" location="/static/img/" />
 	<!-- XML视图解析器 -->
 <!-- 	<bean id="xmlFileViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver"> -->
 <!-- 		<property name="location"> -->
