@@ -2,8 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 </head>
 <body>
 测试springmvc能否成功
+
+<span id="sp1"></span>
+
 </body>
 </html>

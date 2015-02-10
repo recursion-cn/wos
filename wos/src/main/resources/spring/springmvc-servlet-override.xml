@@ -26,16 +26,15 @@
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Service" />
 	</context:component-scan>
-
+	
 	<mvc:annotation-driven>
-		<mvc:message-converters>
-			<!-- default StringHttpMessageConverter, solve encoding problem -->
-			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
-				<constructor-arg value="UTF-8" />
-				<property name="writeAcceptCharset" value="false" />
-			</bean>
-		</mvc:message-converters>
-	</mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" />
+                <property name="writeAcceptCharset" value="false" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 	
 	<!-- 所有页面控制器配置结束 -->
 	<!-- JSP视图解析器 -->
@@ -44,8 +43,9 @@
 		p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
 		
 		<mvc:resources mapping="/static/img/**" location="/static/img/" />
-		<mvc:resources mapping="/static/css/**" location="/static/img/" />
-		<mvc:resources mapping="/static/js/**" location="/static/img/" />
+		<mvc:resources mapping="/static/css/**" location="/static/css/" />
+		<mvc:resources mapping="/static/js/**" location="/static/js/" />
+		<mvc:resources mapping="/static/font/**" location="/static/font/" />
 	<!-- XML视图解析器 -->
 <!-- 	<bean id="xmlFileViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver"> -->
 <!-- 		<property name="location"> -->

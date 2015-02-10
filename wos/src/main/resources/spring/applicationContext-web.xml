@@ -29,6 +29,7 @@
 		<property name="messageConverters">
 			<util:list id="beanList">
 				<ref bean="stringHttpMessageConverter" />
+				<ref bean="mappingJacksonHttpMessageConverter"/>  
 			</util:list>
 		</property>
 	</bean>
@@ -42,6 +43,11 @@
 		</property>
 	</bean>
 	<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	    <property name="supportedMediaTypes">  
+        <list>  
+            <value>text/html;charset=UTF-8</value>  
+        </list>  
+    </property>  
 	</bean>
 	
 	
